@@ -26,8 +26,6 @@ function App() {
   return (
     <div className="App">
       
-
-
       <Navbar
         logo="https://scontent-bos3-1.xx.fbcdn.net/v/t31.18172-8/10547858_841704182521093_7031835331823283697_o.png?_nc_cat=102&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=dcU6DtrG52gAX_uTDdR&_nc_ht=scontent-bos3-1.xx&oh=63d1b91f0507aa92d47ee3961b736e49&oe=60DF5C9B"
         //loader={<Loader type="Puff" color="#D85B5B" height={25} width={25} />}
@@ -37,7 +35,7 @@ function App() {
         }}
         menuItems={[
           {
-            title: "Administrations",
+            title: "Disguises",
             isAuth: true,
             onClick: () => {
               // What you want to do...
@@ -45,21 +43,18 @@ function App() {
             },
           },
           {
-            title: "Transactions",
-            icon: faBookOpen,
+            title: "Tins & Disguise Kits",
             isAuth: () => {
               // Claim authorization logic...
               return false;
             },
           },
           {
-            title: "Networks",
-            icon: faGlobe,
+            title: "CBD",
             isAuth: true,
           },
           {
-            title: "Settings",
-            icon: faCogs,
+            title: "Seed",
             isAuth: true,
             subItems: [
               {
@@ -142,8 +137,19 @@ function App() {
             ],
           },
           {
-            title: "Reports",
-            icon: faChartPie,
+            title: "Additional Produts",
+            isAuth: true,
+          },
+          {
+            title: "Special Missions",
+            isAuth: true,
+          },
+          {
+            title: "Events",
+            isAuth: true,
+          },
+          {
+            title: "Pop Shops",
             isAuth: true,
           },
         ]}
