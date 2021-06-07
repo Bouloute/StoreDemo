@@ -32,14 +32,27 @@ class MyNavbar extends Component {
                                 <NavDropdown.Item href="#action/3.8">Sugar-free</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.9">Dairy-free</NavDropdown.Item>
                             </NavDropdown>                            
-                            <Nav.Link href="#link">Link</Nav.Link>
-                            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                            <NavDropdown title="Tins & Disguise Kits" id="basic-nav-dropdown">
+                                <NavDropdown.Item href="#action/3.1">Baskets</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">Seasonal</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3">Disguie Kits</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.4">1-gallon Tins</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.5">2-gallon Tins</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.6">3-gallon Tins</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.7">6-gallon Tins</NavDropdown.Item>
                             </NavDropdown>
+                            <Nav.Link href="#link">CBD</Nav.Link>
+                            <Nav.Link href="#link">Seed</Nav.Link>
+                            <Nav.Link href="#link">Additional Products</Nav.Link>
+                            <NavDropdown title="Special Missions" id="basic-nav-dropdown">
+                                <NavDropdown.Item href="#action/3.1">Weddings</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">Parties</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3">Fundraisers</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.4">Coporate</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.5">Wholesale</NavDropdown.Item>
+                            </NavDropdown>
+                            <Nav.Link href="#link">Events</Nav.Link>
+                            <Nav.Link href="#link">Pop Shops</Nav.Link>
                         </Nav>
                         <Form inline>
                             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
