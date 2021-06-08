@@ -1,1 +1,6 @@
-
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-image:none !important;
+}
+a:hover {
+    background-color: lightblue;
+}

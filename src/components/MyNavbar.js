@@ -11,6 +11,10 @@ import {
 } from 'react-bootstrap';
 
 class MyNavbar extends Component {
+    dropDownAndUp(id){
+        document.getElementById(id).click()
+    }
+
     render() {
         return (
             <div>
@@ -21,8 +25,14 @@ class MyNavbar extends Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                            <NavDropdown title="Disguises" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Seasonal</NavDropdown.Item>
+                            <NavDropdown 
+                                title="Disguises" 
+                                id="1"
+                                class="dropdown"
+                                onMouseEnter={(e) => this.dropDownAndUp("1")} 
+                                onMouseLeave={(e) => this.dropDownAndUp("1")}
+                            >
+                                <NavDropdown.Item href="#action/3.1" class="dropbtn">Seasonal</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Caramels & Kettle</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.3">Cheeses</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.4">Savory</NavDropdown.Item>
@@ -32,7 +42,12 @@ class MyNavbar extends Component {
                                 <NavDropdown.Item href="#action/3.8">Sugar-free</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.9">Dairy-free</NavDropdown.Item>
                             </NavDropdown>                            
-                            <NavDropdown title="Tins & Disguise Kits" id="basic-nav-dropdown">
+                            <NavDropdown 
+                                title="Tins & Disguise Kits" 
+                                id="2"
+                                onMouseEnter={(e) => this.dropDownAndUp("2")} 
+                                onMouseLeave={(e) => this.dropDownAndUp("2")}
+                            >
                                 <NavDropdown.Item href="#action/3.1">Baskets</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Seasonal</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.3">Disguie Kits</NavDropdown.Item>
@@ -41,10 +56,15 @@ class MyNavbar extends Component {
                                 <NavDropdown.Item href="#action/3.6">3-gallon Tins</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.7">6-gallon Tins</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href="#link">CBD</Nav.Link>
+                            <Nav.Link href="#link" class="dropbtn">CBD</Nav.Link>
                             <Nav.Link href="#link">Seed</Nav.Link>
                             <Nav.Link href="#link">Additional Products</Nav.Link>
-                            <NavDropdown title="Special Missions" id="basic-nav-dropdown">
+                            <NavDropdown 
+                                title="Special Missions" 
+                                id="3"
+                                onMouseEnter={(e) => this.dropDownAndUp("3")} 
+                                onMouseLeave={(e) => this.dropDownAndUp("3")}
+                            >
                                 <NavDropdown.Item href="#action/3.1">Weddings</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Parties</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.3">Fundraisers</NavDropdown.Item>
@@ -58,7 +78,6 @@ class MyNavbar extends Component {
                             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                             <Button variant="outline-success">Search</Button>
                         </Form>
-                        <Nav.Link href="#link">Link</Nav.Link>
 
                     </Navbar.Collapse>   
  
